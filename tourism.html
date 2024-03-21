@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikhil Travels</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <header class="nav">
+        <div class="logo">Nikhil Travels</div>
+        <nav>
+            <ul class="nav-items">
+                <li><a href="#">BOOK NOW</a></li>
+                <li><a href="#">PHOTO GALLERY</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">ABOUT US</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <img src="C:\Users\golla\OneDrive\Desktop\hawaiii.jpg" alt="Hawaii">
+    </div>
+    <div class="introtext">
+        <h2>"Experience the Magic of Hawaii with Us!"</h2>
+        <p>Welcome to Hawaii, where paradise meets reality. Immerse yourself in the beauty of our pristine beaches, lush landscapes, and vibrant culture. Your adventure in paradise begins here.</p>
+        <div class="buttons">
+            <button class="introbutton">Explore Now</button>
+            <button class="introbutton">Special Offers</button>
+            <button class="introbutton search">Search</button>
+        </div>
+    </div>
+    <div class="intro2">
+        <h1>Adventure Awaits in Hawaii</h1>
+        <ul>
+            <li><a href="#">Book Your Hawaiian Adventure Now"</a></li>
+            <li><a href=""></a>Learn More About Hawaii</li>
+            <li><a href="">Explore Our Photo Gallery</a></li>
+            <li><a href="">>Contact Us for Inquiries</a</li>
+        </ul>
+    </div>
+   
+</body>
+</html>
+
+
+
+
+
+
+
+css 
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkslategrey;
+    height: 60px;
+    padding: 0 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-items {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;   
+}
+
+.nav-items li {
+    margin-left: 20px;  
+}
+
+.nav-items li a {
+    text-decoration: none;
+   
+    color: white;
+}
+
+.nav-items li a:hover {
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.container {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: relative;    
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index:  -1;
+}
+
+.introtext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    color: white;
+}
+
+.introtext h2 {
+    padding-top: 40px;
+    margin: 0;
+    font-size: 2rem;
+    color: rgb(135, 222, 189);
+}
+
+.introtext p {
+    margin-top: 40px;
+    font-size: large;
+    padding-right: 70px;
+    padding-left: 90px;
+}
+
+.buttons {
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.introbutton {
+    margin-left: 40px;
+    background-color:antiquewhite;
+    border-radius: 70px;
+    color:black;
+    font-size: medium;
+    border: 1px;
+    padding: 15px 25px;
+    cursor: pointer;
+}
+
+.introbutton:hover {
+    background-color:burlywood;
+}
+.search{
+    background-color: orange;
+}
+
+.intro2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+}
+
+.intro2 h1 {
+  margin: 0;
+}
